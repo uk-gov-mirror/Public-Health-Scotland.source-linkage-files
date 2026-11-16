@@ -4,6 +4,8 @@
 #'
 #' @return data with uplifted costs
 #' @family uplift_costs
+#'
+#' @export
 apply_cost_uplift <- function(data) {
   data <- data %>%
     # attach a uplift scale as the last column
@@ -37,6 +39,7 @@ apply_cost_uplift <- function(data) {
 #'
 #' @return data with uplifted costs
 #' @family uplift_costs
+#' @export
 lookup_uplift <- function(data) {
   # We have set uplifts to use for 2020/21, 2021/22 and 2022/23,
   # provided by Paul Leak.

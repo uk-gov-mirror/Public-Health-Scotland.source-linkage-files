@@ -8,12 +8,12 @@
 #' `TRUE` i.e. write the data to disk.
 #' @param BYOC_MODE
 #' @param write_temp_to_disk write intermediate data for investigation or debug
-#' @inheritParams add_nsu_cohort
-#' @inheritParams fill_geographies
-#' @inheritParams join_cohort_lookups
-#' @inheritParams join_deaths_data
-#' @inheritParams match_on_ltcs
-#' @inheritParams link_delayed_discharge_eps
+#' @inheritParams add_nsu_cohort nsu data
+#' @inheritParams fill_geographies fill geog
+#' @inheritParams join_cohort_lookups join cohort lookups
+#' @inheritParams join_deaths_data join deaths data
+#' @inheritParams match_on_ltcs match ltcs
+#' @inheritParams link_delayed_discharge_eps dd data
 #'
 #' @return a [tibble][tibble::tibble-package] containing the episode file
 #' @export
@@ -531,6 +531,7 @@ correct_cij_vars <- function(data) {
 #'
 #' @return The data with cost including dna.
 #' @family episode_file
+#' @export
 create_cost_inc_dna <- function(data) {
   check_variables_exist(data, c("cost_total_net", "attendance_status"))
 
