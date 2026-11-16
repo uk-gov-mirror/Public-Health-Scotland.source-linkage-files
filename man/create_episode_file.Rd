@@ -38,22 +38,10 @@ create_episode_file(
 
 \item{homelessness_lookup}{the lookup file for homelessness}
 
-\item{dd_data}{The processed DD extract}
-
-\item{ltc_data}{The LTC data for the year}
-
-\item{slf_pc_lookup}{The SLF Postcode lookup}
-
-\item{slf_gpprac_lookup}{The SLF GP Practice lookup}
-
-\item{slf_deaths_lookup}{combined deaths lookup}
-
 \item{write_to_disk}{(optional) Should the data be written to disk default is
 \code{TRUE} i.e. write the data to disk.}
 
 \item{write_temp_to_disk}{write intermediate data for investigation or debug}
-
-\item{BYOC_MODE}{Whether run in a docker on Denodo}
 
 \item{sc_client}{social care lookup file}
 }
